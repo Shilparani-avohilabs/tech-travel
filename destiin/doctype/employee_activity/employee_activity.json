@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-29 12:30:18.182572",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_details_section",
+  "booking_stage",
+  "employee",
+  "employee_name",
+  "company",
+  "test_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Details"
+  },
+  {
+   "fieldname": "booking_stage",
+   "fieldtype": "Select",
+   "label": "Booking Stage",
+   "options": "hotel_search\nadded_to_cart\nroom_confirmation\npayment_method_added\nconfirm_booking\npayment_initiated\npayment_failure\npayment_success\npayment_pending\nbooking_success\nbooking_failure\nview_hotel_details\nroom_selected\npayment_details_entered\nguest_details_entered"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "test_status",
+   "fieldtype": "Select",
+   "label": "Test Status",
+   "options": "hotel_search\nadded_to_cart\nroom_confirmation\npayment_method_added\nconfirm_booking\npayment_initiated\npayment_failure\npayment_success\npayment_pending\nbooking_success\nbooking_failure\nview_hotel_details\nroom_selected\npayment_details_entered\nguest_details_entered"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-30 11:18:00.964534",
+ "modified_by": "Administrator",
+ "module": "Destiin",
+ "name": "Employee Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

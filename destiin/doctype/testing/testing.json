@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-28 18:27:06.205049",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5sh6",
+  "a",
+  "b"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5sh6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Data",
+   "label": "a"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Data",
+   "label": "b"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-28 18:27:25.770645",
+ "modified_by": "Administrator",
+ "module": "Destiin",
+ "name": "Testing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
